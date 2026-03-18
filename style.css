@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+::selection { background: rgba(37, 99, 235, 0.3); color: #fff; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0a0a0c; }
+::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 10px; }
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-18px); }
+}
+@keyframes pulse-slow {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes barFill {
+    from { width: 0; }
+}
+
+.animate-float { animation: float 7s ease-in-out infinite; }
+.animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+
+/* Reveal on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Reusable component styles */
+.tag {
+    padding: 6px 14px;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #60a5fa;
+    letter-spacing: 0.05em;
+}
+
+.tag-sm {
+    padding: 3px 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.tech-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #cbd5e1;
+    transition: all 0.3s;
+}
+.tech-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(96,165,250,0.3);
+    color: #fff;
+}
+
+.edu-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 32px;
+    border-radius: 24px;
+    transition: all 0.4s;
+}
+.edu-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(96,165,250,0.25);
+    transform: translateY(-4px);
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    font-weight: 600;
+    color: #cbd5e1;
+    transition: all 0.3s;
+}
+.cert-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(96,165,250,0.3);
+    transform: translateY(-2px);
+}
+
+.project-card {
+    padding: 28px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 24px;
+    transition: all 0.4s;
+}
+.project-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(96,165,250,0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.contact-info-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 18px;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+.contact-info-card.flex-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 28px 20px;
+}
+.contact-info-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(96,165,250,0.3);
+    transform: translateY(-3px);
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    color: #e2e8f0;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s, background 0.3s;
+}
+.form-input::placeholder { color: #475569; }
+.form-input:focus {
+    border-color: rgba(96,165,250,0.5);
+    background: rgba(255,255,255,0.06);
+}
+
+.social-btn {
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    color: #94a3b8;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-btn:hover {
+    background: rgba(96,165,250,0.1);
+    border-color: rgba(96,165,250,0.4);
+    color: #60a5fa;
+}
+
+.social-btn-sm {
+    padding: 8px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    color: #64748b;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-btn-sm:hover { color: #60a5fa; border-color: rgba(96,165,250,0.3); }
+
+/* Skill bar animation */
+.skill-bar {
+    width: 0;
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Education wide cards */
+.edu-card-wide {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 24px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 20px;
+    transition: all 0.35s;
+}
+.edu-card-wide:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(96,165,250,0.25);
+    transform: translateX(4px);
+}
+
+.edu-logo-wrap {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.35s;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.edu-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
