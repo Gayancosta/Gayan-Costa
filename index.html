@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,15 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-[#0a0a0c] text-slate-100 antialiased">
 
-    <!-- Background Orbs -->
     <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         <div class="absolute top-[-15%] left-[-10%] w-[50%] h-[50%] bg-blue-900/10 blur-[140px] rounded-full"></div>
         <div class="absolute bottom-[-15%] right-[-10%] w-[50%] h-[50%] bg-indigo-900/10 blur-[140px] rounded-full"></div>
         <div class="absolute top-[40%] left-[40%] w-[30%] h-[30%] bg-purple-900/5 blur-[100px] rounded-full"></div>
     </div>
 
-    <!-- NAV -->
     <nav id="navbar" class="fixed w-full z-50 border-b border-white/5 bg-[#0a0a0c]/80 backdrop-blur-xl transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <span class="text-xl font-black bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent tracking-tighter uppercase">GC.</span>
@@ -37,7 +37,6 @@
                 </button>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t border-white/5 bg-[#0a0a0c]/95 backdrop-blur-xl px-6 py-6 space-y-4">
             <a href="#home" class="block text-sm font-bold tracking-widest text-slate-400 hover:text-white transition uppercase">Home</a>
             <a href="#about" class="block text-sm font-bold tracking-widest text-slate-400 hover:text-white transition uppercase">About</a>
@@ -49,7 +48,6 @@
         </div>
     </nav>
 
-    <!-- HERO -->
     <section id="home" class="min-h-screen flex items-center px-6 pt-28 pb-16 relative overflow-hidden">
         <div class="absolute top-1/3 -left-24 w-80 h-80 bg-blue-600/10 blur-[100px] rounded-full animate-pulse-slow"></div>
         <div class="absolute bottom-1/4 -right-24 w-80 h-80 bg-purple-600/10 blur-[100px] rounded-full animate-pulse-slow"></div>
@@ -62,9 +60,9 @@
                 </div>
 
                 <h1 class="text-5xl md:text-7xl font-black leading-[0.9] mb-6 tracking-tighter">
-                    Gayan<br/>
+                    Gayan<br />
                     <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent">
-                        Sampath<br/>Costa.
+                        Sampath<br />Costa.
                     </span>
                 </h1>
 
@@ -77,7 +75,7 @@
 
                 <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                     <a href="#contact" class="group px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] flex items-center gap-2">
-                        Hire Me <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        Let's Connect <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </a>
                     <a href="assets\Gayan Costa.pdf" download class="group px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold rounded-2xl transition-all duration-300 flex items-center gap-2">
                         Download CV <i data-lucide="download" class="w-4 h-4 group-hover:translate-y-0.5 transition-transform"></i>
@@ -91,7 +89,7 @@
                     <a href="mailto:Gayancosta@outlook.com" class="p-3 bg-white/5 border border-white/10 rounded-xl text-slate-400 hover:text-blue-400 hover:border-blue-500/50 transition">
                         <i data-lucide="mail" class="w-5 h-5"></i>
                     </a>
-                    <a href="https://github.com" target="_blank" class="p-3 bg-white/5 border border-white/10 rounded-xl text-slate-400 hover:text-blue-400 hover:border-blue-500/50 transition">
+                    <a href="https://github.com/Gayancosta" target="_blank" class="p-3 bg-white/5 border border-white/10 rounded-xl text-slate-400 hover:text-blue-400 hover:border-blue-500/50 transition">
                         <i data-lucide="github" class="w-5 h-5"></i>
                     </a>
                     <div class="h-6 w-px bg-white/10"></div>
@@ -103,10 +101,9 @@
                 <div class="relative group">
                     <div class="absolute -inset-6 bg-gradient-to-tr from-blue-600/20 via-indigo-600/10 to-purple-600/20 rounded-[2.5rem] blur-2xl group-hover:blur-3xl transition-all duration-700"></div>
                     <div class="relative w-72 h-72 md:w-[380px] md:h-[380px] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl bg-[#16161a] animate-float">
-                        <img src="assets/img/Profile_1.png" alt="Gayan Costa - Cloud & Security Infrastructure Engineer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                        <img src="assets/img/Profile_1.png" alt="Gayan Costa - Cloud & Security Infrastructure Engineer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/70 via-transparent to-transparent"></div>
                     </div>
-                    <!-- Floating badges -->
                     <div class="absolute -bottom-5 -left-5 bg-[#16161a] border border-white/10 p-4 rounded-2xl shadow-2xl hidden md:block backdrop-blur-xl">
                         <p class="text-3xl font-black text-white">8+</p>
                         <p class="text-[10px] uppercase tracking-widest text-blue-400 font-bold">Years Exp.</p>
@@ -119,14 +116,12 @@
             </div>
         </div>
 
-        <!-- Scroll indicator -->
         <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-600 animate-bounce">
             <span class="text-[10px] tracking-widest uppercase">Scroll</span>
             <i data-lucide="chevron-down" class="w-4 h-4"></i>
         </div>
     </section>
 
-    <!-- STATS BAR -->
     <div class="py-12 px-6 border-y border-white/5 bg-[#0d0d10]">
         <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div class="reveal">
@@ -147,9 +142,7 @@
             </div>
         </div>
     </div>
-""
 
-    <!-- ABOUT -->
     <section id="about" class="py-28 px-6 bg-[#0a0a0c]">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -163,10 +156,10 @@
                         I'm an experienced <span class="text-white font-bold">Cloud & Security Infrastructure Engineer</span> with over 8 years of expertise managing and securing hybrid environments. Specialized in identity management, enterprise migrations, and infrastructure hardening for large-scale corporate clients.
                     </p>
                     <p class="text-slate-400 leading-relaxed">
-                        My expertise spans across <span class="text-white font-semibold">Azure Cloud, Microsoft 365, Entra ID, and Network Security</span>. I am committed to delivering secure, resilient, and high-availability solutions within complex enterprise ecosystems.
+                        My expertise spans across <span class="text-white font-semibold">Active Directory, Azure Cloud, Microsoft 365, and Network Security</span>. I am committed to delivering secure, resilient, and high-availability solutions within complex enterprise ecosystems.
                     </p>
                     <p class="text-slate-400 leading-relaxed">
-                        Currently pursuing an <span class="text-white font-semibold">MSc in Network & Information Security</span> at the University of Kingston, deepening my expertise in advanced security frameworks and threat intelligence.
+                        I hold an <span class="text-white font-semibold">MSc in Network & Information Security</span> from Kingston University, awarded with <span class="text-white font-semibold">Distinction</span>. This advanced background deepens my mastery of security frameworks and threat intelligence, bridging the gap between high-level strategy and technical implementation.
                     </p>
 
                     <div class="flex flex-wrap gap-2 pt-4">
@@ -227,7 +220,6 @@
         </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="py-28 px-6 bg-[#0d0d10]">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -236,13 +228,12 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
-                <!-- Left: Skill Bars -->
                 <div class="space-y-7 reveal">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6">Core Proficiency</h3>
 
                     <div class="skill-item">
                         <div class="flex justify-between mb-2">
-                            <span class="text-sm font-semibold">Microsoft Azure</span>
+                            <span class="text-sm font-semibold">Cloud & Security Infrastructure</span>
                             <span class="text-sm text-blue-400 font-bold">95%</span>
                         </div>
                         <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
@@ -252,7 +243,7 @@
 
                     <div class="skill-item">
                         <div class="flex justify-between mb-2">
-                            <span class="text-sm font-semibold">Microsoft 365 & Entra ID</span>
+                            <span class="text-sm font-semibold">Identity & Access Management</span>
                             <span class="text-sm text-blue-400 font-bold">92%</span>
                         </div>
                         <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
@@ -262,7 +253,7 @@
 
                     <div class="skill-item">
                         <div class="flex justify-between mb-2">
-                            <span class="text-sm font-semibold">Active Directory & PKI</span>
+                            <span class="text-sm font-semibold">Active Directory & PKI Governance</span>
                             <span class="text-sm text-purple-400 font-bold">90%</span>
                         </div>
                         <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
@@ -272,7 +263,7 @@
 
                     <div class="skill-item">
                         <div class="flex justify-between mb-2">
-                            <span class="text-sm font-semibold">PowerShell & Automation</span>
+                            <span class="text-sm font-semibold">Security Automation & Scripting</span>
                             <span class="text-sm text-indigo-400 font-bold">88%</span>
                         </div>
                         <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
@@ -292,7 +283,7 @@
 
                     <div class="skill-item">
                         <div class="flex justify-between mb-2">
-                            <span class="text-sm font-semibold">Vulnerability Management</span>
+                            <span class="text-sm font-semibold">Vulnerability & Patch Management</span>
                             <span class="text-sm text-green-400 font-bold">82%</span>
                         </div>
                         <div class="h-1.5 bg-white/5 rounded-full overflow-hidden">
@@ -301,80 +292,71 @@
                     </div>
                 </div>
 
-                <!-- Right: Tech Grid -->
                 <div class="reveal">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6">Technologies & Tools</h3>
                     <div class="grid grid-cols-2 gap-3">
 
-                        <!-- Azure Cloud -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0078D4]" xmlns="http://www.w3.org/2000/svg"><path d="M13.05 4.24L6.56 18.05l-1.32.01 5.4-9.4-3.4-4.07 5.81-.35zm.78.44l4.34 13.37H8.19l5.64-2.47-3.46-4.04 3.46-6.86z"/></svg>
+                            <img src="assets\icon\Microsoft_Azure.png" alt="Azure Cloud" class="w-6 h-6 shrink-0 object-contain">
                             <span>Azure Cloud</span>
                         </div>
 
-                        <!-- Microsoft 365 -->
                         <div class="tech-card">
-                            <img src="assets/icon/M365.png" alt="Microsoft 365 Logo" class="w-8 h-8 shrink-0 object-contain">
+                            <img src="assets/icon/M365.png" alt="Microsoft 365 Logo" class="w-6 h-6 shrink-0 object-contain">
                             <span>Microsoft 365</span>
                         </div>
 
-                        <!-- Fortinet -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#EE3124]" xmlns="http://www.w3.org/2000/svg"><path d="M12 0 0 6.928v10.144L12 24l12-6.928V6.928zm0 1.155 10.847 6.26v9.17L12 22.845 1.153 16.585v-9.17zM7.5 7.5v9h1.8V13.2h5.4v-1.8H9.3V9.3h6.3V7.5z"/></svg>
+                            <img src="assets\icon\Gsuite.png" alt="Google Workspace Logo" class="w-6 h-6 shrink-0 object-contain">
+                            <span>Google Workspace</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="assets\icon\FORTINET.png" alt="Fortinet Logo" class="w-6 h-6 shrink-0 object-contain">
                             <span>Fortinet NSE</span>
                         </div>
 
-                        <!-- PowerShell -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#5391FE]" xmlns="http://www.w3.org/2000/svg"><path d="M23.181 2.974a2.864 2.864 0 0 0-2.03-.84H2.85A2.868 2.868 0 0 0 0 5.003v13.994a2.868 2.868 0 0 0 2.85 2.868h18.3a2.868 2.868 0 0 0 2.85-2.868V5.003a2.864 2.864 0 0 0-.82-2.03zM10.809 17.04H8.96l-3.87-4.42 3.87-4.42h1.85l-3.87 4.42zm7.12 0h-5.47v-1.5h5.47zm0-3h-5.47v-1.5h5.47zm0-3h-5.47v-1.5h5.47z"/></svg>
+                            <img src="assets\icon\Powershell.png" alt="PowerShell Logo" class="w-6 h-6 shrink-0 object-contain">
                             <span>PowerShell</span>
                         </div>
 
-                        <!-- Kubernetes -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#326CE5]" xmlns="http://www.w3.org/2000/svg"><path d="M11.998.0C5.366.0.0 5.367.0 12s5.366 12 11.998 12C18.633 24 24 18.633 24 12S18.633.0 11.998.0zm4.37 17.2l-4.37-2.524-4.37 2.524.001-5.047L3.26 9.63l4.37-.001L11.998 5l4.37 4.629 4.37.001-4.37 2.523z"/></svg>
+                            <img src="assets\icon\Kubernetes.png" alt="Kubernetes" class="w-6 h-6 shrink-0 object-contain">
                             <span>Kubernetes</span>
                         </div>
 
-                        <!-- Entra ID / Azure AD -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0078D4]" xmlns="http://www.w3.org/2000/svg"><path d="M13.05 4.24L6.56 18.05l-1.32.01 5.4-9.4-3.4-4.07 5.81-.35zm.78.44l4.34 13.37H8.19l5.64-2.47-3.46-4.04 3.46-6.86z"/></svg>
+                            <img src="assets\icon\Azure AD.png" alt="Entra ID" class="w-6 h-6 shrink-0 object-contain">
                             <span>Entra ID / AAD</span>
                         </div>
 
-                        <!-- Windows Server -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0078D4]" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0078D4]" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801" />
+                            </svg>
                             <span>Windows Server</span>
                         </div>
 
-                        <!-- ManageEngine -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#F96B00]" xmlns="http://www.w3.org/2000/svg"><path d="M11.246 0C5.033 0 0 5.033 0 11.246c0 6.214 5.033 11.247 11.246 11.247 6.214 0 11.247-5.033 11.247-11.247C22.493 5.033 17.46 0 11.246 0zm0 1.8c5.22 0 9.447 4.227 9.447 9.446 0 5.22-4.227 9.447-9.447 9.447-5.219 0-9.446-4.227-9.446-9.447 0-5.219 4.227-9.446 9.446-9.446zm-.9 3.6v3.6H7.246v1.8h3.1v5.4h1.8v-5.4h3.1v-1.8h-3.1V5.4z"/></svg>
+                            <img src="assets\icon\ME.png" alt="ManageEngine" class="w-6 h-6 shrink-0 object-contain">
                             <span>ManageEngine</span>
                         </div>
 
-                        <!-- Azure DevOps -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0078D7]" xmlns="http://www.w3.org/2000/svg"><path d="M0 18.206v-2.494l2.494-2.494V8.494L0 5.794V3.3L8.494 0v3.3L6 5.794v3.712l6-3.712V3.3L18.206 0 24 5.794v2.494l-2.494 2.494v4.724L24 17.7v2.494L15.506 24v-3.3l2.494-2.494v-3.712l-6 3.712v2.494L5.794 24z"/></svg>
-                            <span>Azure DevOps</span>
-                        </div>
-
-                        <!-- Power Automate -->
-                        <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0066FF]" xmlns="http://www.w3.org/2000/svg"><path d="M12.983 0 4.5 8.246l3.504 3.504L0 19.754h10.5l3.504-3.504 3.504 3.504H24L15.517 11.75l3.504-3.504zm0 3.504 5.25 5.25-1.746 1.746-5.25-5.25zm-5.25 5.25 1.746 1.746-5.25 5.25H1.5zm5.25 5.25 5.25 5.25h-2.496l-4.5-4.5z"/></svg>
+                            <img src="assets\icon\Powerautomate.png" alt="Power Automate" class="w-6 h-6 shrink-0 object-contain">
                             <span>Power Automate</span>
                         </div>
 
-                        <!-- Jira -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0052CC]" xmlns="http://www.w3.org/2000/svg"><path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.004-1.005zm5.723-5.756H5.757a5.215 5.215 0 0 0 5.214 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.762a1.005 1.005 0 0 0-1.021-1.005zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24.018 12.49V1.005A1.005 1.005 0 0 0 23.013 0z"/></svg>
+                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#0052CC]" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.004-1.005zm5.723-5.756H5.757a5.215 5.215 0 0 0 5.214 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.762a1.005 1.005 0 0 0-1.021-1.005zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24.018 12.49V1.005A1.005 1.005 0 0 0 23.013 0z" />
+                            </svg>
                             <span>Jira</span>
                         </div>
 
-                        <!-- Sophos -->
                         <div class="tech-card">
-                            <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 shrink-0 fill-[#00AEEF]" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3.6a8.4 8.4 0 1 1 0 16.8A8.4 8.4 0 0 1 12 3.6zm0 2.4a6 6 0 1 0 0 12A6 6 0 0 0 12 6zm0 2.4a3.6 3.6 0 1 1 0 7.2 3.6 3.6 0 0 1 0-7.2z"/></svg>
+                            <img src="assets\icon\Sophos.png" alt="Sophos" class="w-6 h-6 shrink-0 object-contain">
                             <span>Sophos</span>
                         </div>
 
@@ -384,7 +366,6 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="py-28 px-6 bg-[#0a0a0c]">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -395,7 +376,6 @@
             <div class="relative">
                 <div class="absolute left-6 md:left-1/2 top-0 h-full w-px bg-gradient-to-b from-blue-600 via-purple-600 to-transparent md:-translate-x-1/2"></div>
 
-                <!-- Job 1: IGT1 / IFS R&D -->
                 <div class="relative flex flex-col md:flex-row md:justify-end mb-14 reveal">
                     <div class="md:w-[calc(50%-3rem)] md:mr-12">
                         <div class="ml-14 md:ml-0 bg-white/3 border border-white/8 p-7 rounded-3xl hover:bg-white/6 hover:border-blue-500/30 transition duration-500">
@@ -419,14 +399,13 @@
                     <div class="absolute left-4 md:left-1/2 top-7 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#0a0a0c] md:-translate-x-1/2 z-10"></div>
                 </div>
 
-                <!-- Job 2: Dialog L3 -->
                 <div class="relative flex flex-col md:flex-row mb-14 reveal">
                     <div class="md:w-[calc(50%-3rem)] md:ml-12 md:order-2">
                         <div class="ml-14 md:ml-0 bg-white/3 border border-white/8 p-7 rounded-3xl hover:bg-white/6 hover:border-purple-500/30 transition duration-500">
                             <div class="flex items-center gap-3 mb-3">
                                 <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-400 text-xs font-bold">2023 — 2024</span>
                             </div>
-                            <h3 class="text-xl font-black mb-1">System Administrator (L3)</h3>
+                            <h3 class="text-xl font-black mb-1">System Administrator</h3>
                             <p class="text-slate-400 text-sm font-semibold mb-3 italic">Dialog Axiata — H-One Private Ltd.</p>
                             <ul class="text-slate-500 text-sm space-y-2">
                                 <li class="flex gap-2"><i data-lucide="chevron-right" class="w-4 h-4 text-purple-500 shrink-0 mt-0.5"></i>Served as final L3 escalation point for complex Active Directory, PKI/CA, and RDS issues for 15+ enterprise clients.</li>
@@ -438,7 +417,6 @@
                     <div class="absolute left-4 md:left-1/2 top-7 w-4 h-4 rounded-full bg-purple-500 border-4 border-[#0a0a0c] md:-translate-x-1/2 z-10"></div>
                 </div>
 
-                <!-- Job 3: Dialog Support Admin -->
                 <div class="relative flex flex-col md:flex-row md:justify-end mb-14 reveal">
                     <div class="md:w-[calc(50%-3rem)] md:mr-12">
                         <div class="ml-14 md:ml-0 bg-white/3 border border-white/8 p-7 rounded-3xl hover:bg-white/6 hover:border-indigo-500/30 transition duration-500">
@@ -457,7 +435,6 @@
                     <div class="absolute left-4 md:left-1/2 top-7 w-4 h-4 rounded-full bg-indigo-500 border-4 border-[#0a0a0c] md:-translate-x-1/2 z-10"></div>
                 </div>
 
-                <!-- Job 4: Hayleys -->
                 <div class="relative flex flex-col md:flex-row mb-14 reveal">
                     <div class="md:w-[calc(50%-3rem)] md:ml-12 md:order-2">
                         <div class="ml-14 md:ml-0 bg-white/3 border border-white/8 p-7 rounded-3xl hover:bg-white/6 hover:border-cyan-500/30 transition duration-500">
@@ -476,7 +453,6 @@
                     <div class="absolute left-4 md:left-1/2 top-7 w-4 h-4 rounded-full bg-cyan-500 border-4 border-[#0a0a0c] md:-translate-x-1/2 z-10"></div>
                 </div>
 
-                <!-- Job 5: B.R. De Silva -->
                 <div class="relative flex flex-col md:flex-row md:justify-end mb-4 reveal">
                     <div class="md:w-[calc(50%-3rem)] md:mr-12">
                         <div class="ml-14 md:ml-0 bg-white/3 border border-white/8 p-7 rounded-3xl hover:bg-white/6 hover:border-slate-500/30 transition duration-500">
@@ -499,7 +475,6 @@
         </div>
     </section>
 
-    <!-- EDUCATION & CERTS -->
     <section id="education" class="py-28 px-6 bg-[#0d0d10]">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -507,17 +482,14 @@
                 <h2 class="text-4xl md:text-5xl font-black tracking-tight">Education & Certifications.</h2>
             </div>
 
-            <!-- Degrees -->
             <div class="space-y-5 mb-20">
 
-                <!-- MSc Kingston -->
                 <div class="edu-card-wide reveal group">
-                    <div class="edu-logo-wrap bg-[#6b0f1a]/20 group-hover:bg-[#6b0f1a]/30">
-                        <img src="https://www.kingston.ac.uk/favicon.ico" alt="Kingston University"
-                             class="w-9 h-9 object-contain rounded"
-                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                        <div class="hidden w-9 h-9 items-center justify-center">
-                            <i data-lucide="graduation-cap" class="text-red-400 w-6 h-6"></i>
+                    <div class="edu-logo-wrap bg-white p-1 flex items-center justify-center rounded-lg shadow-md group-hover:shadow-lg transition-all">
+                        <img src="assets/icon/KUL.png" alt="Kingston University London" class="w-12 h-12 object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                        <div class="hidden w-12 h-12 items-center justify-center bg-gray-100 rounded">
+                            <i data-lucide="graduation-cap" class="text-gray-600 w-8 h-8"></i>
                         </div>
                     </div>
                     <div class="flex-1 min-w-0">
@@ -532,12 +504,9 @@
                     </div>
                 </div>
 
-                <!-- BSc Bedfordshire -->
                 <div class="edu-card-wide reveal group">
                     <div class="edu-logo-wrap bg-[#003087]/20 group-hover:bg-[#003087]/30">
-                        <img src="https://www.beds.ac.uk/favicon.ico" alt="University of Bedfordshire"
-                             class="w-9 h-9 object-contain rounded"
-                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="https://www.beds.ac.uk/favicon.ico" alt="University of Bedfordshire" class="w-9 h-9 object-contain rounded" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <div class="hidden w-9 h-9 items-center justify-center">
                             <i data-lucide="book-open" class="text-blue-400 w-6 h-6"></i>
                         </div>
@@ -554,14 +523,11 @@
                     </div>
                 </div>
 
-                <!-- BTEC HND Esoft -->
                 <div class="edu-card-wide reveal group">
-                    <div class="edu-logo-wrap bg-[#0057a8]/20 group-hover:bg-[#0057a8]/30">
-                        <img src="https://www.esoft.lk/favicon.ico" alt="Esoft Metro Campus"
-                             class="w-9 h-9 object-contain rounded"
-                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                        <div class="hidden w-9 h-9 items-center justify-center">
-                            <i data-lucide="award" class="text-cyan-400 w-6 h-6"></i>
+                    <div class="edu-logo-wrap bg-white p-1.5 flex items-center justify-center rounded-md shadow-sm group-hover:shadow-md transition-all">
+                        <img src="assets/icon/Pearson.jpg" alt="Pearson Logo" class="w-14 h-15 object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="hidden w-14 h-10 items-center justify-center bg-gray-100 rounded">
+                            <i data-lucide="award" class="text-gray-400 w-6 h-6"></i>
                         </div>
                     </div>
                     <div class="flex-1 min-w-0">
@@ -574,34 +540,30 @@
                     </div>
                 </div>
 
-                <!-- Certificate — Open University -->
                 <div class="edu-card-wide reveal group">
-                    <div class="edu-logo-wrap bg-[#006633]/20 group-hover:bg-[#006633]/30">
-                        <img src="https://www.ou.ac.lk/favicon.ico" alt="Open University Sri Lanka"
-                             class="w-9 h-9 object-contain rounded"
-                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                        <div class="hidden w-9 h-9 items-center justify-center">
-                            <i data-lucide="monitor" class="text-green-400 w-6 h-6"></i>
+                    <div class="edu-logo-wrap bg-white p-1.5 flex items-center justify-center rounded-md shadow-sm group-hover:bg-gray-50 transition-all">
+                        <img src="assets/icon/OUSL.png" alt="Open University Sri Lanka" class="w-10 h-10 object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="hidden w-10 h-10 items-center justify-center bg-green-50 rounded">
+                            <i data-lucide="monitor" class="text-green-600 w-6 h-6"></i>
                         </div>
                     </div>
+
                     <div class="flex-1 min-w-0">
                         <div class="flex flex-wrap items-center gap-2 mb-1">
                             <span class="edu-badge bg-green-500/10 border-green-500/20 text-green-400">2018</span>
                             <span class="edu-badge bg-slate-500/10 border-slate-500/20 text-slate-400">Certificate</span>
                         </div>
-                        <h3 class="text-base font-black leading-snug">Professional Computer Application</h3>
+                        <h3 class="text-base font-black leading-snug text-white">Professional Computer Application</h3>
                         <p class="text-slate-400 text-sm font-semibold mt-0.5">Open University Sri Lanka</p>
                     </div>
                 </div>
 
-                <!-- Foundation HRM — CIPM -->
                 <div class="edu-card-wide reveal group">
-                    <div class="edu-logo-wrap bg-[#8b0000]/20 group-hover:bg-[#8b0000]/30">
-                        <img src="https://www.cipm.lk/favicon.ico" alt="CIPM Sri Lanka"
-                             class="w-9 h-9 object-contain rounded"
-                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                        <div class="hidden w-9 h-9 items-center justify-center">
-                            <i data-lucide="users" class="text-rose-400 w-6 h-6"></i>
+                    <div class="edu-logo-wrap bg-white p-1.5 flex items-center justify-center rounded-lg shadow-sm group-hover:bg-gray-50 transition-all">
+                        <img src="assets/icon/CIPM.jpg" alt="CIPM Sri Lanka" class="w-10 h-10 object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+
+                        <div class="hidden w-10 h-10 items-center justify-center bg-rose-50 rounded">
+                            <i data-lucide="users" class="text-rose-600 w-6 h-6"></i>
                         </div>
                     </div>
                     <div class="flex-1 min-w-0">
@@ -616,11 +578,9 @@
 
             </div>
 
-            <!-- Certifications -->
             <h3 class="text-center text-sm font-bold uppercase tracking-[0.3em] text-slate-500 mb-10 reveal">Professional Credentials</h3>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 reveal">
 
-                <!-- Microsoft AZ-900 -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-white/5 group-hover:bg-white/10 transition overflow-hidden p-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="w-full h-full object-contain">
@@ -631,7 +591,6 @@
                     </div>
                 </div>
 
-                <!-- Microsoft MS-900 -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-white/5 group-hover:bg-white/10 transition overflow-hidden p-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="w-full h-full object-contain">
@@ -642,7 +601,6 @@
                     </div>
                 </div>
 
-                <!-- Fortinet NSE -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-[#ee3124]/10 group-hover:bg-[#ee3124]/20 transition overflow-hidden p-1.5">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Fortinet_logo.svg" alt="Fortinet" class="w-full h-full object-contain">
@@ -653,7 +611,6 @@
                     </div>
                 </div>
 
-                <!-- Kubernetes / CNCF -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-[#326ce5]/10 group-hover:bg-[#326ce5]/20 transition overflow-hidden p-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" class="w-full h-full object-contain">
@@ -664,7 +621,6 @@
                     </div>
                 </div>
 
-                <!-- Kali Linux / Cybrary -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-white/5 group-hover:bg-white/10 transition overflow-hidden p-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Kali_Linux_2.0_wordmark.svg" alt="Kali Linux" class="w-full h-full object-contain brightness-200">
@@ -675,12 +631,11 @@
                     </div>
                 </div>
 
-                <!-- OPSWAT -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-[#00aeef]/10 group-hover:bg-[#00aeef]/20 transition overflow-hidden p-1.5">
                         <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" stroke="#00aeef" stroke-width="8"/>
-                            <path d="M30 50 Q50 20 70 50 Q50 80 30 50Z" fill="#00aeef"/>
+                            <circle cx="50" cy="50" r="45" stroke="#00aeef" stroke-width="8" />
+                            <path d="M30 50 Q50 20 70 50 Q50 80 30 50Z" fill="#00aeef" />
                         </svg>
                     </div>
                     <div>
@@ -689,7 +644,6 @@
                     </div>
                 </div>
 
-                <!-- Cisco -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-[#049fd9]/10 group-hover:bg-[#049fd9]/20 transition overflow-hidden p-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco" class="w-full h-full object-contain">
@@ -700,7 +654,6 @@
                     </div>
                 </div>
 
-                <!-- Udemy -->
                 <div class="cert-card group">
                     <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-[#a435f0]/10 group-hover:bg-[#a435f0]/20 transition overflow-hidden p-1">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" alt="Udemy" class="w-full h-full object-contain">
@@ -711,22 +664,12 @@
                     </div>
                 </div>
 
-                <!-- Professional Computer Applications -->
-                <div class="cert-card group">
-                    <div class="w-10 h-10 shrink-0 flex items-center justify-center rounded-lg bg-[#fdb913]/10 group-hover:bg-[#fdb913]/20 transition">
-                        <i data-lucide="monitor" class="text-[#fdb913] w-5 h-5"></i>
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold leading-snug">Professional Computer Applications</p>
-                        <p class="text-xs text-slate-500 mt-0.5">Professional Certification</p>
-                    </div>
-                </div>
+    
 
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="py-28 px-6 bg-[#0a0a0c]">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -804,7 +747,6 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="py-28 px-6 bg-[#0d0d10] border-t border-white/5">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-20 reveal">
@@ -815,7 +757,6 @@
 
             <div class="flex flex-col items-center gap-5 reveal">
 
-                <!-- Contact Cards Row -->
                 <div class="grid sm:grid-cols-3 gap-4 w-full max-w-3xl">
                     <a href="mailto:Gayancosta@outlook.com" class="contact-info-card group flex-col text-center items-center">
                         <div class="w-12 h-12 shrink-0 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-center justify-center group-hover:bg-blue-500/20 transition mb-3">
@@ -848,14 +789,12 @@
                     </div>
                 </div>
 
-                <!-- Social Links -->
                 <div class="flex flex-col items-center gap-4 pt-4">
                     <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Find Me On</p>
                     <div class="flex gap-3">
                         <a href="https://www.linkedin.com/in/gayan-costa/" target="_blank" class="social-btn"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                        <a href="https://github.com/Rootcosta" target="_blank" class="social-btn"><i data-lucide="github" class="w-5 h-5"></i></a>
+                        <a href="https://github.com/Gayancosta" target="_blank" class="social-btn"><i data-lucide="github" class="w-5 h-5"></i></a>
                         <a href="https://twitter.com" target="_blank" class="social-btn"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                        <a href="https://instagram.com" target="_blank" class="social-btn"><i data-lucide="instagram" class="w-5 h-5"></i></a>
                     </div>
                 </div>
 
@@ -863,18 +802,15 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="py-8 px-6 border-t border-white/5 bg-[#0a0a0c]">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <span class="text-xl font-black bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent tracking-tighter uppercase">GC.</span>
-            <p class="text-slate-600 text-xs uppercase tracking-[0.3em]">© 2026 Gayan Costa. All Rights Reserved.</p>
-            <div class="flex gap-3">
-                <a href="https://www.linkedin.com/in/gayan-costa/" target="_blank" class="social-btn-sm"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-                <a href="https://github.com" target="_blank" class="social-btn-sm"><i data-lucide="github" class="w-4 h-4"></i></a>
-            </div>
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
+            <p class="text-slate-600 text-xs uppercase tracking-[0.3em] text-center">
+                © 2026 Gayan Costa. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
